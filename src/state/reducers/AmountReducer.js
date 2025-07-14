@@ -1,6 +1,6 @@
 
 
-export default reducer=(initialState = 0, action)=>{
+const reducer=(initialState = 0, action)=>{
 
     if(action.type === 'deposit'){
         return initialState + action.payload
@@ -10,3 +10,5 @@ export default reducer=(initialState = 0, action)=>{
         return initialState;
     }
 }
+
+export default reducer;
